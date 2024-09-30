@@ -1,0 +1,19 @@
+<section class="bg">
+	<div class="grid md">
+		<h2>Latest</h2>
+		<div class="row blog-card archives">
+			{% for post in posts %}
+				<article class="cards">
+					<a href="/posts/{{ post.data.name }}" title="{{ post.data.title }}">
+						<div class="card-img">
+							<img src="{{ post.data.image }}">
+						</div>
+						<div class="card-txt">
+							<h2><span>{{ post.data.title }}</span></h2>
+						</div>
+					</a>
+				</article>
+			{% endfor %}
+		</div>
+	</div>
+</section>

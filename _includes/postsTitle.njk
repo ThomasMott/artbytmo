@@ -1,0 +1,22 @@
+<section class="bg" id="main">
+	<div class="grid">
+		{% if page.url == "/archive/" %}
+			<h1 class="category-title">All articles</h1>
+		{% endif %}
+		<h1 class="category-title">{{ category.title }}</h1>
+		<div class="categories">
+		<a href="/archive/"
+		{% if page.url == "/archive/" %}
+			aria-current="page"
+		{% endif %}
+		>all</a>
+		{% for category in collections.categories %}
+			<a href="/categories/{{ category.slug }}/"
+			{% if category.title in page.url %}
+				aria-current="page"
+			{% endif %}
+			>{{ category.title }}</a>
+		{% endfor %}
+		</div>
+	</div>
+</section>

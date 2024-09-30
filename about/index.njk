@@ -1,0 +1,41 @@
+---
+title: About me - artbytmo.
+description: About me.
+layout: layouts/base.njk
+pagination:
+  data: collections.post
+  size: 2
+  alias: posts
+  reverse: true
+---
+<section class="bg">
+	<div class="grid md">
+		<div>
+			<div class="about">
+				<img src="/static/images/test.webp" />
+				<div>
+					<h1>Tom Mott</h1>
+					<p>Is a designer, artist and illustrator who lives in Bristol, UK.</p>
+					<p>Hailing from Bolton, Tom studied Product Design at Bangor university and got an M.A. in User experiece Design at Loughborough. He has since gone on to work as a designer for numerous compaines across the UK. He has created work from small illustrations to billboards.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="bg">
+	<div class="grid md">
+		<div class="details">
+			<h2>Clients include</h2>
+			<p>test / test / test / test / test / test</p>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="grid md">
+		<div class="details">
+			<h2>Reach out</h2>
+			<p>If you have a project that you think might fit me, you can reach out through <a href="mailto:thomasnathanielmott@gmail.com">thomasnathanielmott@gmail.com</a> or <a href="https://www.linkedin.com/in/thomas-mott-57348b150/">LinkedIn</a>.</p>
+		</div>
+	</div>
+</section>
+{% include "posts-latest.njk" %}

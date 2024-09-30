@@ -1,0 +1,15 @@
+.about {
+	display: grid;
+	gap: $spacing_six;
+
+	img {
+		margin-bottom: $spacing_five;
+		max-width: 100%;
+		border: 1px solid var(--grey_light);
+		opacity: 0.88;
+	}
+
+	@media (min-width: $breakpoint-sm) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}

@@ -1,0 +1,19 @@
+---
+title: Contact - artbytmo
+description: Get in touch.
+layout: layouts/base.njk
+pagination:
+  data: collections.post
+  size: 2
+  alias: posts
+  reverse: true
+---
+<section class="bg">
+	<div class="grid md">
+		<div class="details">
+			<h1>Get in touch</h1>
+			<p>You can contact me directly <a href="#">here</a></p>
+		</div>
+	</div>
+</section>
+{% include "posts-latest.njk" %}

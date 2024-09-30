@@ -1,0 +1,13 @@
+---
+title: All projects - artbytmo.
+description: Browse the latest projects from artbytmo.
+layout: layouts/base.njk
+pagination:
+  data: collections.post
+  size: 15
+  alias: posts
+  reverse: true
+---
+
+{% include "posts.njk" %}
+{% include "pagination.njk" %}

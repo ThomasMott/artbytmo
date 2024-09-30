@@ -1,0 +1,141 @@
+body {
+	&.inner {
+		background-color: var(--white_off);
+
+		section {
+			display: block;
+
+			&.bg {
+				background-color: var(--white);
+
+				.grid {
+					margin-bottom: 0;
+				}
+			}
+
+			.time {
+				font-size: 16px;
+				color: var(--grey_med);
+
+				span {
+					color: var(--orange);
+					font-weight: bold;
+				}
+			}
+
+			.title {
+				color: var(--black_jet);
+				font-weight: bold;
+				margin-top: 24px;
+				word-wrap: break-word;
+			}
+
+			.sec-title {
+				color: var(--orange);
+				font-weight: 600;
+				font-size: 40px;
+				line-height: 64px;
+			}
+
+			.sec-txt {
+				p {
+					@media (min-width: $breakpoint-md) {
+						padding-right: 24px;
+					}
+				}
+			}
+
+			.rec-title {
+				color: var(--black_jet);
+				font-weight: 600;
+				font-size: 32px;
+				line-height: 56px;
+				text-align: center;
+			}
+
+			li {
+				margin: 8px 0;
+			}
+
+			p,
+			li {
+				color: var(--grey_med);
+			}
+
+			ul {
+				list-style: none;
+			}
+
+			.grid {
+				margin: 0 auto;
+				max-width: $breakpoint-lg;
+				padding: 16px;
+
+				&.md {
+					max-width: $breakpoint-md;
+					margin: auto;
+				}
+
+				&.lg {
+					max-width: $breakpoint-lg;
+					margin: auto;
+				}
+
+				.ul-f {
+					img {
+						padding-bottom: 16px;
+					}
+
+					border: 1px solid var(--grey_light);
+					padding: 16px;
+					margin: 8px;
+					border-radius: 8px;
+
+					li {
+						padding: 6px 0;
+					}
+
+					.hlght {
+						color: var(--grey_med);
+						margin-bottom: 16px;
+						line-height: 40px;
+					}
+
+					&.h {
+						display: flex;
+
+						img {
+							padding-bottom: 0;
+							padding-right: 16px;
+						}
+					}
+				}
+
+				.ul-s {
+					display: flex;
+					gap: $spacing_four;
+					flex-wrap: wrap;
+
+					li {
+						box-shadow: var(--black_jet) 4px 4px 0px 0px;
+						border: 4px solid var(--black_jet);
+						padding: 0 $spacing_three;
+						list-style: none;
+						color: var(--black_jet);
+						text-transform: capitalize;
+						transition: box-shadow 400ms;
+						border-radius: 8px;
+
+						a {
+							font-size: 16px;
+						}
+
+						&:hover {
+							box-shadow: var(--black_jet) 0px 0px 0px 0px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

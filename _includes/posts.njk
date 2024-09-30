@@ -1,0 +1,24 @@
+<section class="bg">
+	<div class="grid">
+		<div class="row blog-card">
+		{% for post in posts %}
+			<article class="cards
+				{% if post.data.big %}
+					big
+				{% endif %}
+				{% if post.data.tall %}
+					tall
+				{% endif %}">
+				<a href="/posts/{{ post.data.name }}" title="{{ post.data.title }}">
+					<div class="card-img">
+						<img src="{{ post.data.image }}">
+					</div>
+					<div class="card-txt">
+						<h2><span>{{ post.data.title }}</span></h2>
+					</div>
+				</a>
+			</article>
+		{% endfor %}
+		</div>
+	</div>
+</section>
