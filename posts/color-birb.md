@@ -5,7 +5,7 @@ tldr: Birds, realistic
 image: /static/images/blog/bird-realistic/color-birb.webp
 tags: ["post", "bird-realistic"]
 categories: ["bird-realistic"]
-date: 2024-31-09
+date: 2024-10-02
 layout: layouts/post.njk
 author: tmo
 ---
