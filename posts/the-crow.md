@@ -1,6 +1,6 @@
 ---
-title: Crow
-name: crow
+title: The crow
+name: the-crow
 tldr: Birds, I like them
 image: /static/images/blog/birds/crow.webp
 tags: ["post", "birds"]
@@ -10,4 +10,4 @@ layout: layouts/post.njk
 author: tmo
 ---
 
-Crow.
+The crow.
