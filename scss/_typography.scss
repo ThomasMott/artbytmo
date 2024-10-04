@@ -1,15 +1,9 @@
-@font-face {
-	font-family: Questrial;
-	src: url(../static/Questrial-Regular.ttf);
-}
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-	font-family: "Questrial", serif;
 	color: var(--black_jet);
 	overflow-wrap: break-word;
 	font-weight: 800;

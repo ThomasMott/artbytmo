@@ -6,7 +6,7 @@ Pull requests are welcome.
 
 If you want to add a new art piece then add `{artName}.md` into the `/posts` directory.
 
-Posts require a title: _string_, name: _string_, tldr: _string_, time: _string_, image: _string_, tags: _array_, date: _YYYY-MM-DD_ and layout: _layouts/post.njk_. 
+Posts require a title: _string_, name: _string_, tldr: _string_, time: _string_, image: _string_, tags: _array_, date: _YYYY-MM-DD_ and layout: _layouts/post.njk_.
 These are set at the top of the markdown file, see existing posts for more.
 
 If adding media please add into `/static/images/blog` and create a new folder with the same name as your .md file.
@@ -22,7 +22,7 @@ Once everything is added run Eleventy (more below on that) and your post will be
 clone repo:
 
 ```
-git clone https://github.com/ThomasMott/artbytmo.git
+git clone https://github.com/ThomasMott/xtmto.git
 ```
 
 cd into root folder and install dependencies:

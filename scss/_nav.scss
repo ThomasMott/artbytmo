@@ -18,10 +18,22 @@
 		max-width: $breakpoint-xl;
 		margin: 0 auto;
 
+		.logo {
+			text-decoration: none;
+
+			h4 {
+				margin-top: 0;
+				margin-bottom: 0;
+
+				&:hover {
+					color: var(--orange);
+				}
+			}
+		}
+
 		a,
 		p {
 			font-size: 18px;
-			font-family: "Questrial", serif;
 		}
 
 		li a {
